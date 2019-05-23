@@ -10,7 +10,7 @@ x = 0.12 //valor inicial de x
 
 while (1)
     x_ant = x //recebe valor de x da iteração anterior
-    x = x_ant - f(x_ant)/d(x_ant) //novo valor de x
+    x = x_ant - f(x_ant)/d(x_ant) //ponto onde a reta que tangencia o x anterior toca o eixo
     Er = abs((x - x_ant)/x)
     if(Er < 10^-3) then //condição para parar de atualizar o x
         break
